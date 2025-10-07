@@ -18,6 +18,11 @@ export default function Button() {
 
        // updater funcction
        setCars(c => [...c, newCar]);
+
+       // for reset reasons
+       setYear(currentDate.getFullYear());
+       setCarMake("");
+       setCarModel("");
    }
 
    const removeCar = (index) => {
